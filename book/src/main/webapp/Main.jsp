@@ -23,7 +23,7 @@
 		<hr class="roofbottom">
 		<div id="top">
 			<div id="title">
-				<img src="resources/img/title.png">
+				<a href="Main.jsp" style="text-decoration: none"><img src="resources/img/title.png"></a>
 			</div>
 			<div id="search">
 				<input type="text" class="srcbar" name="srcbar" id="srcbar"
@@ -41,8 +41,8 @@
 				</ul>
 			</div>
 			<div id="ad">
-				<!-- 광고 넣을 부분 -->
-				광고
+				<!-- 이달의 추천책 -->
+				이달의 책
 			</div>
 		</div>
 		<div id="category">

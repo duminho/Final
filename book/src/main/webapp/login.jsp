@@ -28,5 +28,9 @@
 		<div id="login">
 			<button type="button" class="login" onclick="location.href='login_check.jsp'"><img src="resources/img/loginbutton.png"></button>
 		</div>
+		<div id="insert">
+			<a href ="sign_up.jsp" style="text-decoration: none; font-size: 20px; font-weight: bold; color: black; margin-right: 5px;">회원 가입</a> |
+			<a href ="sign_up.jsp" style="text-decoration: none; font-size: 20px; font-weight: bold; margin-left: 5px; color: black;">비밀번호 찾기</a>
+		</div>
 	</body>
 </html>

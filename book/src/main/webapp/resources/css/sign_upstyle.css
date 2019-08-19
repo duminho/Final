@@ -1,0 +1,328 @@
+@charset "UTF-8";
+#body{
+	background-color: #FAF1F1;
+}
+#title{
+	z-index: 1;
+	position: absolute;
+	left: 500px;
+	margin-top: 200px;
+	width: 300px;
+	height: 137px;
+}
+#picture{
+	margin-top: 100px;
+	position: absolute;
+	left: 400px;
+	width: 500px;
+	height: 750px;
+}
+#sign_up{
+	background-color: white;
+	margin-top: 100px;
+	position: absolute;
+	left: 950px;
+	width: 500px;
+	height: 750px;
+}
+.id{
+	position: absolute;
+	width: 500px;
+	height: 70px;
+}
+.pw{
+	margin-top: 70px;
+	position: absolute;
+	width: 500px;
+	height: 70px;
+}
+.pwcheck{
+	margin-top: 140px;
+	position: absolute;
+	width: 500px;
+	height: 70px;
+}
+.name{
+	margin-top: 210px;
+	position: absolute;
+	width: 500px;
+	height: 70px;
+}
+.tel{
+	margin-top: 280px;
+	position: absolute;
+	width: 500px;
+	height: 70px;
+}
+.birth{
+	margin-top: 350px;
+	position: absolute;
+	width: 500px;
+	height: 70px;
+}
+.gender{
+	margin-top: 25px;
+	margin-left: 430px;
+	position: absolute;
+	width: 70px;
+	height: 40px;
+}
+.email{
+	margin-top: 420px;
+	position: absolute;
+	width: 500px;
+	height: 70px;
+}
+.address{
+	margin-top: 490px;
+	position: absolute;
+	width: 500px;
+	height: 140px;
+}
+.interest{
+	margin-top: 640px;
+	position: absolute;
+	width: 500px;
+	height: 70px;
+}
+.idvalue{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 90px;
+	width: 250px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.pwvalue{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 90px;
+	width: 250px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.pwcheckvalue{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 90px;
+	width: 250px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.namevalue{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 90px;
+	width: 250px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.telvalue{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 90px;
+	width: 250px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.birthvalue{
+	margin-top: 25px;
+	padding-top: 8px;
+	position: absolute;
+	margin-left: 90px;
+	width: 250px;
+	height: 33px;
+}
+.emailvalue{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 90px;
+	width: 150px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.addressvalue{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 90px;
+	width: 400px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.addressvalue2{
+	margin-top: 95px;
+	position: absolute;
+	margin-left: 10px;
+	width: 480px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.interestvalue{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 90px;
+	width: 400px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.idtext{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.pwtext{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.pwchecktext{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.nametext{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.teltext{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.birthtext{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.gendertext{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 350px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.emailtext{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.addresstext{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.interesttext{
+	margin-top: 25px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.emailSelect{
+	margin-top: 25px;
+	margin-left: 250px;
+	position: absolute;
+	width: 250px;
+	height: 40px;
+}
+.emailDirect{
+	position: absolute;
+	width: 120px;
+	height: 25px;
+	
+}
+.eSelectBox{
+	padding-top:5px;
+	position: absolute;
+	width: 100px;
+	height: 35px;
+}
+.eDirectBox{
+	padding-top:5px;	
+	margin-left: 110px;
+	position: absolute;
+	width: 130px;
+	height: 35px;
+}
+.select{
+	width: 100px;
+	height: 30px;
+}
+.check{
+	margin-top: 25px;
+	position: absolute;
+	left: 370px;
+	width: 80px;
+	height: 40px;
+	border: none;
+	font-weight: bold;
+	background-color: #F95858;
+	cursor: pointer;
+}

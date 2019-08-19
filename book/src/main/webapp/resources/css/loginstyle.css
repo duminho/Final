@@ -12,6 +12,7 @@
 	height: 150px;
 }
 #content{
+	margin-left: 30px;
 	position: absolute;
 	margin-top: 150px;
 	width: 500px;
@@ -37,7 +38,7 @@ input.id{
 	position: absolute;
 	margin-left: 750px;
 	margin-top: 120px;
-	width: 400px;
+	width: 360px;
 	height: 50px;
 	border: solid #F46868 2px;
 }
@@ -45,7 +46,7 @@ input.pw{
 	position: absolute;
 	margin-left: 750px;
 	margin-top: 220px;
-	width: 400px;
+	width: 360px;
 	height: 50px;
 	border: solid #F46868 2px;
 }
@@ -85,4 +86,12 @@ input.pw{
 	height: 700px;
 	margin-top:100px;
 	background-color: white;
+}
+#insert{
+	position:absolute;
+	left: 850px;
+	margin-top: 570px;
+	z-index: 1;
+	width: 300px;
+	height: 30px;
 }
