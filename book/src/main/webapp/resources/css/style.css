@@ -1,0 +1,265 @@
+@charset "UTF-8";
+#roof{
+	background-color: #FDECEC;
+	height: 30px;
+	margin-top: -7px;
+}
+ul.rooflist{
+	position: absolute;
+	left: 1100px;
+	list-style: none;
+	float: left;
+	height: 20px;
+}
+li.roofvalue1{
+	margin-top: -15px;
+	list-style: none;
+	margin-left: 10px;
+	float: left;
+}
+
+hr.roofbottom{
+	margin-top: -2px;
+}
+#top{
+	position: absolute;
+	left: 450px;
+	width: 1000px;
+	height: 150px;
+}
+#title{
+	margin-top: 25px;
+	position:absolute;
+	width: 200px;
+	height: 100px;
+}
+#search{
+	position: absolute;
+	left: 200px;
+	width: 700px;
+	height: 100px;
+}
+.srcbar{
+	position: absolute;
+	left: 40px;
+	width: 400px;
+	height: 40px;
+	border: solid #994848 4px;
+	border-left-color: white;
+	border-right-color: white;
+	border-top-color: white;
+	margin-top: 60px;
+	text-align: left;
+}
+button.btn{
+	position: absolute;
+	left: 450px;
+	margin-top: 60px;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	border: none;
+	background-color: white;
+}
+.btn:hover{
+	cursor: pointer;
+}
+.word{
+	position: absolute;
+	left: 250px;
+	margin-top: 20px;
+	width: 500px;
+	height: 50px;
+}
+ul.hotword{
+	text-align: center;
+	position: absolute;
+	list-style: none;
+	float:left;
+}
+li.hotvalue{
+	text-align: center;
+	font-size: 12px;
+	list-style: none;
+	margin-left: 10px;
+	float:left;
+}
+
+#ad{
+	position: absolute;
+	left: 780px;
+	width: 200px;
+	height: 150px;
+	border: solid black 1px;
+}
+.btn03{
+	position:relative;
+	font-size: 25px;
+	margin-left: 25px;
+	margin-top: 50px;
+	width: 100px;
+	height: 50px;
+}
+#middle{
+	position:absolute;
+	padding-left: 450px;
+	padding-right: 450px;
+	width: 1000px;
+	height: 400px;
+	margin-top: 200px;
+	background-color: #FBD7D8;
+}
+#category{
+	position:absolute;
+	height: 50px;
+	margin-top: 150px;
+	padding-left: 450px;
+	padding-right: 915px;
+	background-color: #620F12;
+}
+ul.categorymenu{
+	list-style: none;
+	margin-left: -20px;
+	background-color: #620F12;
+}
+li.categoryvalue{
+	text-align:center;
+	padding-top:13px;
+	list-style: none;
+	margin-top: -16px;
+	width: 100px;
+	height: 35px;
+	float:left;
+	border: solid #620F12 1px;
+	background-color: #620F12;
+	font-weight: bold;
+	color: white;
+}
+#select{
+	margin-top: 20px;
+	margin-left: 20px;
+	position: absolute;
+	width: 600px;
+	height: 300px;
+	border: solid black 1px;
+	overflow: hidden;
+}
+.select1{
+	position: absolute;
+	width: 200px;
+	height: 150px;
+	border: solid black 1px;
+	background-color: blue;
+}
+.select2{
+	margin-left: 200px;
+	position: absolute;
+	width: 200px;
+	height: 150px;
+	border: solid black 1px;
+	background-color: red;
+}
+.select3{
+	margin-left: 400px;
+	position: absolute;
+	width: 200px;
+	height: 150px;
+	border: solid black 1px;
+	background-color: green;
+}
+.select4{
+	margin-top: 150px;
+	position: absolute;
+	width: 200px;
+	height: 150px;
+	border: solid black 1px;
+	background-color: yellow;
+}
+.select5{
+	margin-top: 150px;
+	margin-left: 200px;
+	position: absolute;
+	width: 200px;
+	height: 150px;
+	border: solid black 1px;
+	background-color: pink;
+}
+.select6{
+	margin-top: 150px;
+	margin-left: 400px;
+	position: absolute;
+	width: 200px;
+	height: 150px;
+	border: solid black 1px;
+	background-color: orange;
+}
+.newsbar{
+	margin-top: 20px;
+	margin-left: 700px;
+	position: absolute;
+	width: 200px;
+	height: 300px;
+	border: solid black 1px;
+	background-color: purple;	
+}
+.halfline{
+	margin-top: 609px;
+}
+.selectline{
+	margin-top: 350px;
+}
+#half{
+	position: absolute;
+	margin-left: 7px;
+	margin-top: -10px;
+	left: 450px;
+	width: 900px;
+	height: 150px;
+	border: solid black 1px;
+}
+.halfvalue1{
+	position: absolute;
+	width: 300px;
+	height: 150px;
+	border: solid black 1px;	
+}
+.halfvalue2{
+	position: absolute;
+	margin-left: 300px;
+	width: 300px;
+	height: 150px;
+	border: solid black 1px;	
+}
+.halfvalue3{
+	position: absolute;
+	margin-left:600px;
+	width: 300px;
+	height: 150px;
+	border: solid black 1px;	
+}
+.halfvalueline{
+	margin-top: 150px;
+}
+#bottom{
+	position: absolute;
+	margin-top: -5px;
+	padding-left: 450px;
+	padding-right: 550px;
+	width: 900px;
+	height: 300px;
+	background-color: #C2F1F9;
+}
+#footer{
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 450px;
+	width: 900px;
+	height: 200px;
+	border: solid black 1px;	
+}
+a:link.categoryvalue{
+	color: white;
+	text-decoration: none;
+}
+ 	a:visited { color: black; text-decoration: none;}
+ 	a:hover { color: blue; text-decoration: underline;}
