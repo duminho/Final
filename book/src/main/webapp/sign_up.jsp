@@ -65,7 +65,7 @@
 			</div>
 			<div class="email">
 				<div class="emailtext">이메일</div>
-				<input type="text" name="email" class="emailvalue">
+				<input type="text" name="emailID" class="emailvalue">
 				<div class="emailSelect">
 					<div class="eSelectBox">
 						<select name="emailAdd" class="select">

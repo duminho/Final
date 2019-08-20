@@ -15,21 +15,7 @@
 	</properties>
 	
 	<repositories>
-
-      <repository>
-         <id>mvn2</id>
-         <url>http://repo1.maven.org/maven2/</url>
-
-         <releases>
-            <enabled>true</enabled>
-         </releases>
-
-         <snapshots>
-            <enabled>true</enabled>
-         </snapshots>
-      </repository>
-
-      <repository>
+	  <repository>
          <id>oracle</id>
          <name>ORACLE JDBC Repository</name>
          <url>http://maven.jahia.org/maven2</url>
@@ -150,6 +136,7 @@
 			<artifactId>ojdbc6</artifactId>
 			<version>11.2.0.3</version>
 		</dependency>
+		
 		<dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
@@ -172,6 +159,7 @@
             <artifactId>spring-jdbc</artifactId>
             <version>5.0.4.RELEASE</version>
         </dependency>
+		       
 	</dependencies>
     <build>
         <plugins>
