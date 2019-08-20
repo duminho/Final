@@ -1,0 +1,364 @@
+@charset "UTF-8";
+#body{
+	background-color: #FAF1F1;
+}
+#title{
+	z-index: 1;
+	position: absolute;
+	left: 500px;
+	margin-top: 200px;
+	width: 300px;
+	height: 137px;
+}
+#picture{
+	margin-top: 100px;
+	position: absolute;
+	left: 400px;
+	width: 500px;
+	height: 750px;
+}
+#sign_up{
+	background-color: white;
+	margin-top: 100px;
+	position: absolute;
+	left: 950px;
+	width: 500px;
+	height: 750px;
+}
+.id{
+	position: absolute;
+	width: 500px;
+	height: 60px;
+}
+.pw{
+	margin-top: 60px;
+	position: absolute;
+	width: 500px;
+	height: 60px;
+}
+.pwcheck{
+	margin-top: 120px;
+	position: absolute;
+	width: 500px;
+	height: 60px;
+}
+.name{
+	margin-top: 180px;
+	position: absolute;
+	width: 500px;
+	height: 60px;
+}
+.tel{
+	margin-top: 240px;
+	position: absolute;
+	width: 500px;
+	height: 60px;
+}
+.birth{
+	margin-top: 300px;
+	position: absolute;
+	width: 500px;
+	height: 60px;
+}
+.gender{
+	margin-top: 25px;
+	margin-left: 430px;
+	position: absolute;
+	width: 70px;
+	height: 40px;
+}
+.email{
+	margin-top: 360px;
+	position: absolute;
+	width: 500px;
+	height: 60px;
+}
+.address{
+	margin-top: 420px;
+	position: absolute;
+	width: 500px;
+	height: 180px;
+}
+.interest{
+	margin-top: 610px;
+	position: absolute;
+	width: 500px;
+	height: 60px;
+}
+.idvalue{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 90px;
+	width: 250px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.pwvalue{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 90px;
+	width: 250px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.pwcheckvalue{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 90px;
+	width: 250px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.namevalue{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 90px;
+	width: 250px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.telvalue{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 90px;
+	width: 250px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.birthvalue{
+	margin-top: 15px;
+	padding-top: 8px;
+	position: absolute;
+	margin-left: 90px;
+	width: 250px;
+	height: 33px;
+}
+.emailvalue{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 90px;
+	width: 150px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.addressvalue{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 90px;
+	width: 150px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.addressvalue2{
+	margin-top: 75px;
+	position: absolute;
+	margin-left: 10px;
+	width: 480px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.addressvalue3{
+	margin-top: 140px;
+	position: absolute;
+	margin-left: 10px;
+	width: 480px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.interestvalue{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 90px;
+	width: 400px;
+	height: 40px;
+	border: solid black 1px;	
+}
+.idtext{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.pwtext{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.pwchecktext{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.nametext{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.teltext{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.birthtext{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.gendertext{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 350px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.emailtext{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.addresstext{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.interesttext{
+	margin-top: 15px;
+	position: absolute;
+	margin-left: 10px;
+	width: 70px;
+	height: 30px;
+	border: solid #6F0E0E 2px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+	padding-top: 10px;
+}
+.emailSelect{
+	margin-top: 15px;
+	margin-left: 250px;
+	position: absolute;
+	width: 250px;
+	height: 40px;
+}
+.emailDirect{
+	position: absolute;
+	width: 120px;
+	height: 25px;
+	
+}
+.eSelectBox{
+	padding-top:5px;
+	position: absolute;
+	width: 100px;
+	height: 35px;
+}
+.eDirectBox{
+	padding-top:5px;	
+	margin-left: 110px;
+	position: absolute;
+	width: 130px;
+	height: 35px;
+}
+.select{
+	width: 100px;
+	height: 30px;
+}
+.check{
+	margin-top: 15px;
+	position: absolute;
+	left: 370px;
+	width: 80px;
+	height: 40px;
+	border: none;
+	font-weight: bold;
+	background-color: #F95858;
+	cursor: pointer;
+}
+.confirm{
+	margin-top: 680px;
+	position: absolute;
+	left: 150px;
+	width: 200px;
+	height: 50px;
+	border: solid black 1px;
+}
+.confirmbtn{
+	position: absolute;
+	width: 200px;
+	height: 50px;
+	border: none;
+	font-weight: bold;
+	background-color: #F95858;
+	cursor: pointer;
+	font-size: 20px;
+}
+.searchPostcode{
+	margin-top: 15px;
+	position: absolute;
+	left: 250px;
+	width: 180px;
+	height: 45px;
+	font-weight: bold;
+	cursor: pointer;
+	font-size: 15px;
+}
