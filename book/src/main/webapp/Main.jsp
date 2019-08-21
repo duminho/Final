@@ -11,16 +11,15 @@
 		<div id="roof">
 			<ul class="rooflist">
 				<li class="roofvalue1"><button type="button"
-						onclick="location.href='login.jsp'" class="roofvalue1">로그인</button></li>
+						onclick="location.href='login.jsp'" class="roofvalue2">로그인</button></li>
 				<li class="roofvalue1"><button type="button"
-						onclick="location.href='sign_up.jsp'" class="roofvalue1">회원가입</button></li>
+						onclick="location.href='sign_up.jsp'" class="roofvalue2">회원가입</button></li>
 				<li class="roofvalue1"><button type="button"
-						onclick="location.href=''" class="roofvalue1">고객센터</button></li>
+						onclick="location.href=''" class="roofvalue2">고객센터</button></li>
 				<li class="roofvalue1"><button type="button"
-						onclick="location.href=''" class="roofvalue1">결제화면</button></li>
+						onclick="location.href=''" class="roofvalue2">결제화면</button></li>
 			</ul>
 		</div>
-		<hr class="roofbottom">
 		<div id="top">
 			<div id="title">
 				<a href="Main.jsp" style="text-decoration: none"><img src="resources/img/title.png"></a>
@@ -41,9 +40,38 @@
 				</ul>
 			</div>
 			<div id="ad">
-				<!-- 이달의 추천책 -->
-				이달의 책
-			</div>
+	            <div class="mySlides fade">
+	               <div class="numbertext">1 / 3</div>
+	               <img src="resources/img/first.png" style="width: 100%">
+	            </div>
+	
+	            <div class="mySlides fade">
+	               <div class="numbertext">2 / 3</div>
+	               <img src="resources/img/second.png" style="width: 100%">
+	            </div>
+	      
+	            <div class="mySlides fade">
+	               <div class="numbertext">3 / 3</div>
+	               <img src="resources/img/third.png" style="width: 100%">
+	            </div>
+	         </div>
+	         
+	         <script>
+	            var slideIndex = 0;
+	            showSlides();
+	      
+	            function showSlides() {
+	                var i;
+	                var slides = document.getElementsByClassName("mySlides"); // mySlides fade 의 값을 가져옴 (fade는 이펙트 효과)
+	                for (i = 0; i < slides.length; i++) {
+	                   slides[i].style.display = "none";  
+	                }
+	                slideIndex++;
+	                if (slideIndex > slides.length) {slideIndex = 1}    
+	                slides[slideIndex-1].style.display = "block";  
+	                setTimeout(showSlides, 4000); // 1000 = 1sec
+	            }
+	        </script>
 		</div>
 		<div id="category">
 			<ul class="categorymenu">
@@ -65,7 +93,6 @@
 			</div>
 			<div class="newsbar">
 			</div>
-			<hr class="selectline">
 		</div>
 		<hr class="halfline">
 		<div id="half">
