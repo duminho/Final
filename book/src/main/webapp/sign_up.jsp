@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,6 +7,7 @@
 		<title>향기로운 글자 서향</title>
 		<link rel="stylesheet" href="resources/css/sign_upstyle.css?after">
 		<script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script>
 		    function searchAddress() {
 		        new daum.Postcode({
@@ -53,140 +54,167 @@
 		        }).open();
 		    }
 		</script>
-		<!-- <script type="text/javascript">
-		    $("#id").blur(function) {
-					var d = $("#id").val();
-					$.ajax({
-						url : '${pageContext.request.contextPath}/user/idCheck?id='+ id,
-						type : 'get',
-						success : function(data) {
-							console.log("1 = 중복o / 0 = 중복x : "+ data);							
-							
-							if (data == 1) {
-									// 1 : 아이디가 중복되는 문구
-									$("#id_check").text("사용중인 아이디입니다");
-									$("#id_check").css("color", "red");
-									$("#reg_submit").attr("disabled", true);
-								} else {
-									
-									if(idJ.test(user_id)){
-										// 0 : 아이디 길이 / 문자열 검사
-										$("#id_check").text("");
-										$("#reg_submit").attr("disabled", false);
-							
-									} else if(user_id == ""){
-										
-										$('#id_check').text('아이디를 입력해주세요 :)');
-										$('#id_check').css('color', 'red');
-										$("#reg_submit").attr("disabled", true);				
-										
-									} else {
-										
-										$('#id_check').text("아이디는 소문자와 숫자 4~12자리만 가능합니다 :) :)");
-										$('#id_check').css('color', 'red');
-										$("#reg_submit").attr("disabled", true);
-									}
-									
-								}
-							}, error : function() {
-									console.log("실패");
+		<script type="text/javascript">
+		$(function() {
+			$("#checkbtn").click(function() {
+				var inputId = $("#insertId").val();
+				
+				$.ajax({
+				    url : "select.do?id=" + inputId,  
+				    data: inputId,
+				    dataType : 'text',
+				    success : function(result) {
+				    	var result2 = result.trim();
+					    if(result2 == "NO"){
+					    	alert("중복된 아이디 입니다.");
+					    }
+					    else {
+					    	alert("사용 가능한 아이디 입니다.");
+					    }
+					}
+				});
+			});
+		});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$("#alert-check").hide();
+				$("#alert-success").hide();
+				$("#alert-danger").hide();
+				$("input").keyup(function() {
+					var pw1 = $("#pw").val();
+					var pw2 = $("#pwcheck").val();
+					if (pw1 != "" || pw2 != "") {
+						if (pw1.length < 6 || pw1 == "") {
+							$("#alert-check").show();
+							$("#alert-success").hide();
+							$("#alert-danger").show();
+							$("#submit").attr("disabled", "disabled");
+						}
+						else {
+							if(pw1 != pw2){
+							$("#alert-check").hide();
+							$("#alert-success").hide();
+							$("#alert-danger").show();
+							$("#submit").attr("disabled", "disabled");
 							}
-						});
-					});
-		</script>     -->
-		<!-- 중복확인 메소드 진행중 -->
+							else if (pw1 == pw2) {
+								$("#alert-check").hide();
+								$("#alert-success").show();
+								$("#alert-danger").hide();
+								$("#submit").removeAttr("disabled");
+							}
+						}
+					}
+				});
+			});
+		</script>
 	</head>
 	<body id="body">
-		<div id ="title">
+		<div id="title">
 			<a href="Main.jsp" style="text-decoration: none"><img src="resources/img/sign_uptitle.png"></a>
 		</div>
-		<div id = "picture">
+		<div id="picture">
 			<img src="resources/img/back.png">
 		</div>
-		<div class="check_font" id="id_check"></div>
-		<form action="insert.do">
-		<div id = "sign_up">
-			<div class="id">
-				<div class="idtext">ID</div>
-				<input type="text" name="id" class="idvalue">
-			</div>
-			<div class="pw">
-				<div class="pwtext">PW</div>
-				<input type="password" name="pw" class="pwvalue">
-			</div>
-			<div class="pwcheck">
-				<div class="pwchecktext">PW확인</div>
-				<input type="password" name="pwcheck" class="pwcheckvalue">
-			</div>
-			<div class="name">
-				<div class="nametext">이름</div>
-				<input type="text" name="name" class="namevalue">
-			</div>
-			<div class="tel">
-				<div class="teltext">전화번호</div>
-				<input type="text" name="tel" class="telvalue">
-			</div>
-			<div class="birth">
-				<div class="birthtext">생년월일</div>
-				<div class="birthvalue">
-				<span style="float: left;">
-					<select name="birthY">
-						<%for(int i = 2019; i > 1900; i--){%>
-						<option value="<%= i %>"><%=i%></option>
-						<%}	%>
-					</select> 년 &nbsp;
-					<select name="birthM">
-						<%for(int i = 1; i <= 12; i++){%>
-						<option value="<%= i %>"><%= i %></option>
-						<%}%>
-					</select> 월 &nbsp;
-					<select name="birthD">
-						<%for(int i = 1; i <= 31; i++){%>
-						<option value="<%= i %>"><%= i %></option>
-						<%}%>
-					</select> 일
-				</span>
-				</div>
-				<div class="gendertext">성별</div>
-				<div class="gender">
-					<input type="radio" name="gender" value="male" checked>남자
-					<input type="radio" name="gender" value="female">여자
-				</div>
-			</div>
-			<div class="email">
-				<div class="emailtext">이메일</div>
-				<input type="text" name="emailID" class="emailvalue">
-				<div class="emailSelect">
-					<div class="eSelectBox">
-						<select name="emailAdd" class="select">
-							<option selected>이메일 선택</option>
-							<option>@naver.com</option>
-							<option>@daum.net</option>
-							<option>@gmail.com</option>
-							<option>@nate.com</option>
-							<option>직접입력</option>
-						</select>
-					</div>
-					<div class="eDirectBox">
-						<input type="text" name="emailDirect" class="emailDirect" placeholder="직접입력">
-					</div>
-				</div>
-			</div>
-			<div class="address">
-				<div class="addresstext">주소</div>
-				<input type="text" id="postcode" name="postcode" class="addressvalue" placeholder="우편 번호">
-				<input type="button" onclick="searchAddress()" value="우편번호 찾기" class="searchPostcode">
-				<input type="text" id="address" name="address" class="addressvalue2" placeholder="주소를 입력해주세요">
-				<input type="text" id="detailAddress" name="detailAddress" class="addressvalue3" placeholder="상세주소를 입력해주세요">
-			</div>
-			<div class="interest">
-				<div class="interesttext">관심도서</div>
-				<input type="text" name="interest" class="interestvalue">
-			</div>
-			<div class="confirm">
-				<input type="submit" value="회원가입" class="confirmbtn" id="confirmbtn">
-			</div>
+		<div class="idcheck">
+			<button type="button" id="checkbtn" class="check">중복확인</button>
 		</div>
+		<form action="insert.do">
+			<div id="sign_up">
+				<div class="id">
+					<div class="idtext">ID</div>
+					<input type="text" id="insertId" name="id" class="idvalue" placeholder="id를 입력해주세요">
+				</div>
+				<div class="pw">
+					<div class="pwtext">PW</div>
+					<input type="password" id="pw" name="pw" class="pwvalue" placeholder="pw를 입력해주세요">
+					<div class="warning" id="alert-check">×비밀번호를 6자이상 써주세요.</div>
+				</div>
+				<div class="pwcheck">
+					<div class="pwchecktext">PW확인</div>
+					<input type="password" id="pwcheck" name="pwcheck" class="pwcheckvalue" placeholder="pw를 확인해주세요">
+					<div class="pwSuccess" id="alert-success">√비밀번호가 일치합니다.</div>
+					<div class="pwDanger" id="alert-danger">×비밀번호가 일치하지 않습니다.</div>
+				</div>
+				<div class="name">
+					<div class="nametext">이름</div>
+					<input type="text" name="name" class="namevalue" placeholder="이름을 입력해주세요">
+				</div>
+				<div class="tel">
+					<div class="teltext">전화번호</div>
+					<input type="text" name="tel" class="telvalue" placeholder="전화번호를 입력해주세요">
+				</div>
+				<div class="birth">
+					<div class="birthtext">생년월일</div>
+					<div class="birthvalue">
+						<span style="float: left;"> <select name="birthY">
+								<%
+									for (int i = 2019; i > 1900; i--) {
+								%>
+								<option value="<%=i%>"><%=i%></option>
+								<%
+									}
+								%>
+						</select> 년 &nbsp; <select name="birthM">
+								<%
+									for (int i = 1; i <= 12; i++) {
+								%>
+								<option value="<%=i%>"><%=i%></option>
+								<%
+									}
+								%>
+						</select> 월 &nbsp; <select name="birthD">
+								<%
+									for (int i = 1; i <= 31; i++) {
+								%>
+								<option value="<%=i%>"><%=i%></option>
+								<%
+									}
+								%>
+						</select> 일
+						</span>
+					</div>
+					<div class="gendertext">성별</div>
+					<div class="gender">
+						<input type="radio" name="gender" value="male" checked>남자 
+						<input type="radio" name="gender" value="female">여자
+					</div>
+				</div>
+				<div class="email">
+					<div class="emailtext">이메일</div>
+					<input type="text" name="emailID" class="emailvalue" placeholder="이메일을 입력해주세요">
+					<div class="emailSelect">
+						<div class="eSelectBox">
+							<select name="emailAdd" class="select">
+								<option selected>이메일 선택</option>
+								<option>@naver.com</option>
+								<option>@daum.net</option>
+								<option>@gmail.com</option>
+								<option>@nate.com</option>
+								<option>직접입력</option>
+							</select>
+						</div>
+						<div class="eDirectBox">
+							<input type="text" name="emailDirect" class="emailDirect" placeholder="직접입력">
+						</div>
+					</div>
+				</div>
+				<div class="address">
+					<div class="addresstext">주소</div>
+					<input type="text" id="postcode" name="postcode" class="addressvalue" placeholder="우편 번호">
+					<input type="button" onclick="searchAddress()" value="우편번호 찾기" class="searchPostcode">
+					<input type="text" id="address" name="address" class="addressvalue2" placeholder="주소를 입력해주세요">
+					<input type="text" id="detailAddress" name="detailAddress" class="addressvalue3" placeholder="상세주소를 입력해주세요">
+				</div>
+				<div class="interest">
+					<div class="interesttext">관심도서</div>
+					<input type="text" name="interest" class="interestvalue" placeholder="관심도서를 입력해주세요. 예)IT, 스포츠">
+				</div>
+				<div class="confirm">
+					<input type="submit" value="회원가입" class="confirmbtn" id="confirmbtn">
+				</div>
+			</div>
 		</form>
 	</body>
 </html>
