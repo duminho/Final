@@ -6,7 +6,17 @@
 
 	<insert id="insert" parameterType="signDTO">
 		INSERT INTO member
-		VALUES(#{id},#{pw},#{name},#{tel})
+		VALUES(#{id},#{pw},#{name},#{tel},#{birthY},#{birthM},#{birthD},#{gender},#{emailID},
+		#{emailAdd},#{emailDirect},#{postcode},#{Address},#{detailAddress},#{interest})
 	</insert>
+	
+	<select id="select" parameterType="String" resultMap="rsMap">
+		SELECT * FROM member
+		WHERE id = #{id}<!-- #EL문은 미리 실행할 준비 후 값이 들어오면 바로 실행 -->
+	</select>
+	
+	<resultMap type="String" id="rsMap">
+		<result property="id" column="id" />
+	</resultMap>
 
 </mapper>
