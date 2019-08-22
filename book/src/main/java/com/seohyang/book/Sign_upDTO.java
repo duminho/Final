@@ -11,11 +11,24 @@ public class Sign_upDTO {
 	private String gender;
 	private String emailID;
 	private String emailAdd;
-	private String emailDirect;
+	private String emailDirect;	
+	private String postcode;
 	private String Address;
+	private String detailAddress;
 	private String interest;
 	
-	
+	public String getPostcode() {
+		return postcode;
+	}
+	public void setPostcode(String postcode) {
+		this.postcode = postcode;
+	}
+	public String getDetailAddress() {
+		return detailAddress;
+	}
+	public void setDetailAddress(String detailAddress) {
+		this.detailAddress = detailAddress;
+	}
 	public String getId() {
 		return id;
 	}
