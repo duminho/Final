@@ -1,35 +1,41 @@
 @charset "UTF-8";
 #roof{
+	position: relative;
+	margin-top: -5px;
 	background-color: #FDECEC;
 	height: 30px;
-	margin-top: -7px;
+	width: 1900px;
 }
 ul.rooflist{
-	position: absolute;
+	position: relative;
 	left: 1100px;
 	list-style: none;
 	float: left;
-	height: 20px;
+	height: 30px;
 }
 li.roofvalue1{
-	margin-top: -15px;
+	margin-top: -10px;
 	list-style: none;
 	margin-left: 10px;
 	float: left;
 }
 
-hr.roofbottom{
-	margin-top: -2px;
+.roofvalue2{
+	margin-top: -20px;
+	cursor: pointer;
 }
+
 #top{
-	position: absolute;
+	margin-top: 15px;
+	position: relative;
 	left: 450px;
 	width: 1000px;
 	height: 150px;
 }
 #title{
+	margin-left: 10px;
 	margin-top: 25px;
-	position:absolute;
+	position: absolute;
 	width: 200px;
 	height: 100px;
 }
@@ -101,20 +107,19 @@ li.hotvalue{
 	height: 50px;
 }
 #middle{
-	position:absolute;
+	position: relative;
 	padding-left: 450px;
 	padding-right: 450px;
 	width: 1000px;
 	height: 400px;
-	margin-top: 200px;
 	background-color: #FBD7D8;
 }
 #category{
-	position:absolute;
+	position:relative;
+	width: 1000px;
 	height: 50px;
-	margin-top: 150px;
 	padding-left: 450px;
-	padding-right: 915px;
+	padding-right: 450px;
 	background-color: #620F12;
 }
 ul.categorymenu{
@@ -126,7 +131,6 @@ li.categoryvalue{
 	text-align:center;
 	padding-top:13px;
 	list-style: none;
-	margin-top: -16px;
 	width: 100px;
 	height: 35px;
 	float:left;
@@ -195,7 +199,7 @@ li.categoryvalue{
 }
 .newsbar{
 	margin-top: 20px;
-	margin-left: 700px;
+	margin-left: 750px;
 	position: absolute;
 	width: 200px;
 	height: 300px;
@@ -203,13 +207,11 @@ li.categoryvalue{
 	background-color: purple;	
 }
 .halfline{
-	margin-top: 609px;
-}
-.selectline{
-	margin-top: 350px;
+	position: relative;
+	margin-top: -2px;
 }
 #half{
-	position: absolute;
+	position: relative;
 	margin-left: 7px;
 	margin-top: -10px;
 	left: 450px;
@@ -238,20 +240,19 @@ li.categoryvalue{
 	border: solid black 1px;	
 }
 .halfvalueline{
-	margin-top: 150px;
+	margin-top: 1px;
 }
 #bottom{
-	position: absolute;
-	margin-top: -5px;
-	padding-left: 450px;
+	position: relative;
+	margin-top: -7px;
+ 	padding-left: 450px;
 	padding-right: 550px;
 	width: 900px;
 	height: 300px;
 	background-color: #C2F1F9;
 }
 #footer{
-	position: absolute;
-	margin-top: 300px;
+	position: relative;
 	margin-left: 450px;
 	width: 900px;
 	height: 200px;
@@ -261,5 +262,71 @@ a:link.categoryvalue{
 	color: white;
 	text-decoration: none;
 }
- 	a:visited { color: black; text-decoration: none;}
- 	a:hover { color: blue; text-decoration: underline;}
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+ 	
+/* Slide custom  */
+/* * {
+	box-sizing: border-box;
+} */
+/* body{
+	font-family: Verdana, sans-serif;
+	margin:0
+} */
+.mySlides{
+	display: none
+}
+mySlide:img{
+	vertical-align: middle;
+	width: 200px;
+	height: 150px;
+}
+
+.text {
+  color: #000000;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
