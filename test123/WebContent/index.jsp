@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	123456789
+	123456789 안녕하세요
+	전희철 바보멍청이 
 </body>
 </html>
